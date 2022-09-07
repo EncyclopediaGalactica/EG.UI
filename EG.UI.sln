@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI", "UI\UI.csproj", "{8079D02D-FC18-4994-82AE-EFB943BADE48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FAST", "FAST\FAST.csproj", "{0DC32F07-F40B-4512-B5A5-D45A13ADC65D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FAST.Tests.Unit", "FAST.Tests.Unit\FAST.Tests.Unit.csproj", "{82A5F13A-0456-414C-9B65-964C67FE62AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FAST.Test.Host", "FAST.Test.Host\FAST.Test.Host.csproj", "{DC624DAD-A2A3-4920-96FE-E12D2D845867}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{50170932-356F-4E52-B5A2-50A55E968A33}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8079D02D-FC18-4994-82AE-EFB943BADE48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8079D02D-FC18-4994-82AE-EFB943BADE48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8079D02D-FC18-4994-82AE-EFB943BADE48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8079D02D-FC18-4994-82AE-EFB943BADE48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DC32F07-F40B-4512-B5A5-D45A13ADC65D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DC32F07-F40B-4512-B5A5-D45A13ADC65D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DC32F07-F40B-4512-B5A5-D45A13ADC65D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DC32F07-F40B-4512-B5A5-D45A13ADC65D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82A5F13A-0456-414C-9B65-964C67FE62AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82A5F13A-0456-414C-9B65-964C67FE62AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82A5F13A-0456-414C-9B65-964C67FE62AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82A5F13A-0456-414C-9B65-964C67FE62AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC624DAD-A2A3-4920-96FE-E12D2D845867}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC624DAD-A2A3-4920-96FE-E12D2D845867}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC624DAD-A2A3-4920-96FE-E12D2D845867}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC624DAD-A2A3-4920-96FE-E12D2D845867}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
