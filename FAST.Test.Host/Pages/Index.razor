@@ -1,25 +1,40 @@
 ﻿@page "/"
 @using com.encyclopediagalactica.ui.fast.Accordion
+@using com.encyclopediagalactica.ui.fast.Anchor
+
 <PageTitle>Index</PageTitle>
 
 <h1>Accordion</h1>
 <h2>Without accordion item headers</h2>
-<FastAccordion>
-    <FastAccordionItem IsExpanded="true">First item</FastAccordionItem>
-    <FastAccordionItem IsExpanded="true">second item</FastAccordionItem>
-</FastAccordion>
+<p>
+    <FastAccordion>
+        <FastAccordionItem IsExpanded="true">First item</FastAccordionItem>
+        <FastAccordionItem IsExpanded="true">second item</FastAccordionItem>
+    </FastAccordion>
+</p>
 
 <h2>With accordion item headers</h2>
-<FastAccordion>
-    <FastAccordionItem IsExpanded="true">
-        <FastAccordionItemHeader>FAST Accordion Item Header 1</FastAccordionItemHeader>
-        FAST Accordion Item contents
-    </FastAccordionItem>
-    <FastAccordionItem IsExpanded="true">
-        <FastAccordionItemHeader>FAST Accordion Item Header 2</FastAccordionItemHeader>
-        FAST Accordion Item contents
-    </FastAccordionItem>
-</FastAccordion>
+<p>
+    <FastAccordion>
+        <FastAccordionItem IsExpanded="true">
+            <FastAccordionItemHeader>FAST Accordion Item Header 1</FastAccordionItemHeader>
+            FAST Accordion Item contents
+        </FastAccordionItem>
+        <FastAccordionItem IsExpanded="true">
+            <FastAccordionItemHeader>FAST Accordion Item Header 2</FastAccordionItemHeader>
+            FAST Accordion Item contents
+        </FastAccordionItem>
+    </FastAccordion>
+</p>
+<hr/>
 
+<h1>Anchor</h1>
+<FastAnchor>Default</FastAnchor>
+<FastAnchor style="@Configuration.Appearance.Neutral">Neutral</FastAnchor>
+<FastAnchor style="@Configuration.Appearance.Accent">Accent</FastAnchor>
+<FastAnchor style="@Configuration.Appearance.Lightweight">Lightweight</FastAnchor>
+<FastAnchor style="@Configuration.Appearance.Outline">Outline</FastAnchor>
+<FastAnchor style="@Configuration.Appearance.Stealth">Stealth</FastAnchor>
+<FastAnchor style="@Configuration.Appearance.Hypertext">Hypertext</FastAnchor>
 
 <h1>Hello, world!</h1>
