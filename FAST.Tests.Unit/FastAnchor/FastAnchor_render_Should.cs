@@ -1,8 +1,8 @@
 namespace com.encyclopediagalactica.ui.fast.test.unit.FastAnchor;
 
 using System.Diagnostics.CodeAnalysis;
-using Anchor;
 using Bunit;
+using fast.FastAnchor;
 using Xunit;
 using Xunit.Abstractions;
 

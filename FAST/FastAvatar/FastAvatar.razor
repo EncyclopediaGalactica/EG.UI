@@ -1,0 +1,13 @@
+<fast-avatar
+    @if (string.IsNullOrEmpty(AltTag) || string.IsNullOrWhiteSpace(AltTag))
+    {
+        @($"alt={AltTag}")
+    }
+    @if (string.IsNullOrEmpty(Href) || string.IsNullOrWhiteSpace(Href))
+    {
+        @($"link={Href}")
+    }
+    name="@Name" shape="@Shape"
+    fill="@Fill">
+    @ChildContent
+</fast-avatar>

@@ -1,4 +1,4 @@
-﻿namespace UI.Pages;
+﻿namespace com.encyclopediagalactica.ui.host.Pages;
 
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;

@@ -1,4 +1,4 @@
-using UI.Data;
+using com.encyclopediagalactica.ui.host.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 

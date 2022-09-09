@@ -1,4 +1,4 @@
-namespace FAST;
+namespace com.encyclopediagalactica.ui.fast;
 
 using Microsoft.JSInterop;
 

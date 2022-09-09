@@ -1,8 +1,8 @@
-namespace com.encyclopediagalactica.ui.fast.test.unit.Accordion;
+namespace com.encyclopediagalactica.ui.fast.test.unit.FastAccordion;
 
 using System.Diagnostics.CodeAnalysis;
 using Bunit;
-using fast.Accordion;
+using fast.FastAccordion;
 using Xunit;
 using Xunit.Abstractions;
 
