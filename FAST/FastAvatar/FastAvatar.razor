@@ -1,13 +1,24 @@
 <fast-avatar
     @if (string.IsNullOrEmpty(AltTag) || string.IsNullOrWhiteSpace(AltTag))
     {
-        @($"alt={AltTag}")
+        @($"alt=\"{AltTag}\"")
     }
     @if (string.IsNullOrEmpty(Href) || string.IsNullOrWhiteSpace(Href))
     {
-        @($"link={Href}")
+        @($"link=\"{Href}\"")
     }
-    name="@Name" shape="@Shape"
-    fill="@Fill">
+    @if (string.IsNullOrEmpty(Name) || string.IsNullOrWhiteSpace(Name))
+    {
+        @($"name=\"{Name}\"")
+    }
+    @if (string.IsNullOrEmpty(Shape) || string.IsNullOrWhiteSpace(Shape))
+    {
+        @($"shape=\"{Shape}\"")
+    }
+    @if (string.IsNullOrEmpty(Fill) || string.IsNullOrWhiteSpace(Fill))
+    {
+        @($"fill=\"{Fill}\"")
+    }
+>
     @ChildContent
 </fast-avatar>

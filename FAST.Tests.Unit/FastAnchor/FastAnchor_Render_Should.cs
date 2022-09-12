@@ -8,12 +8,12 @@ using Xunit.Abstractions;
 
 [ExcludeFromCodeCoverage]
 [SuppressMessage("ReSharper", "InconsistentNaming")]
-public class FastAnchor_render_Should
+public class FastAnchor_Render_Should
 {
     private readonly ITestOutputHelper _outputHelper;
     private readonly TestContext _testContext;
 
-    public FastAnchor_render_Should(ITestOutputHelper outputHelper)
+    public FastAnchor_Render_Should(ITestOutputHelper outputHelper)
     {
         ArgumentNullException.ThrowIfNull(outputHelper);
         _outputHelper = outputHelper;
