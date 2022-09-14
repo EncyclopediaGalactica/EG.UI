@@ -61,7 +61,6 @@ public class FastAvatar_Render_Should
         // Assert
         cut.MarkupMatches(
             "<fast-avatar " +
-            "alt=\"\" " +
             "link=\"href\" " +
             "name=\"Name\" " +
             "shape=\"shape\" " +
@@ -86,7 +85,6 @@ public class FastAvatar_Render_Should
         cut.MarkupMatches(
             "<fast-avatar " +
             "alt=\"alttag\" " +
-            "link=\"\" " +
             "name=\"Name\" " +
             "shape=\"shape\" " +
             "fill=\"fill\" " +
@@ -111,7 +109,6 @@ public class FastAvatar_Render_Should
             "<fast-avatar " +
             "alt=\"alttag\" " +
             "link=\"href\" " +
-            "name=\"\" " +
             "shape=\"shape\" " +
             "fill=\"fill\" " +
             "color=\"black\">childcontent</fast-avatar>");
@@ -136,7 +133,6 @@ public class FastAvatar_Render_Should
             "alt=\"alttag\" " +
             "link=\"href\" " +
             "name=\"Name\" " +
-            "shape=\"\" " +
             "fill=\"fill\" " +
             "color=\"black\">childcontent</fast-avatar>");
     }
@@ -161,7 +157,6 @@ public class FastAvatar_Render_Should
             "link=\"href\" " +
             "name=\"Name\" " +
             "shape=\"shape\" " +
-            "fill=\"\" " +
             "color=\"black\">childcontent</fast-avatar>");
     }
     
@@ -172,6 +167,7 @@ public class FastAvatar_Render_Should
         IRenderedComponent<FastAvatar> cut = _testContext.RenderComponent<FastAvatar>(
             parameters => parameters
                 .Add(name => name.Name, "Name")
+                .Add(fill => fill.Fill, "fill")
                 .Add(altTag => altTag.AltTag, "alttag")
                 .Add(href => href.Href, "href")
                 .Add(shape => shape.Shape, "shape")
@@ -184,7 +180,6 @@ public class FastAvatar_Render_Should
             "link=\"href\" " +
             "name=\"Name\" " +
             "shape=\"shape\" " +
-            "fill=\"\" " +
-            "color=\"\">childcontent</fast-avatar>");
+            "fill=\"fill\">childcontent</fast-avatar>");
     }
 }

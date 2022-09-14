@@ -1,6 +1,6 @@
-<fast-avatar alt="@(!string.IsNullOrEmpty(AltTag)? AltTag : "")"
-             link="@(!string.IsNullOrEmpty(Href)? Href : "")"
-             name="@(!string.IsNullOrEmpty(Name)? Name : "")"
-             shape="@(!string.IsNullOrEmpty(Shape)? Shape : "")"
-             fill="@(!string.IsNullOrEmpty(Fill)? Fill : "")"
-             color="@(!string.IsNullOrEmpty(Color)? Color : "")">@ChildContent</fast-avatar>
+<fast-avatar alt="@AltTag"
+             link="@Href"
+             name="@Name"
+             shape="@Shape"
+             fill="@Fill"
+             color="@Color">@ChildContent</fast-avatar>
