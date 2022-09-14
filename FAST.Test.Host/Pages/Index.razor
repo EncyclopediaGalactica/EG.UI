@@ -1,4 +1,7 @@
 ﻿@page "/"
+@using EncyclopediaGalactica.UI.FAST.FastAccordion
+@using EncyclopediaGalactica.UI.FAST.FastAnchor
+@using EncyclopediaGalactica.UI.FAST.FastAvatar
 
 <PageTitle>Index</PageTitle>
 
@@ -28,11 +31,19 @@
 
 <h1>Anchor</h1>
 <FastAnchor>Default</FastAnchor>
-<FastAnchor style="@Configuration.Appearance.Neutral">Neutral</FastAnchor>
-<FastAnchor style="@Configuration.Appearance.Accent">Accent</FastAnchor>
-<FastAnchor style="@Configuration.Appearance.Lightweight">Lightweight</FastAnchor>
-<FastAnchor style="@Configuration.Appearance.Outline">Outline</FastAnchor>
-<FastAnchor style="@Configuration.Appearance.Stealth">Stealth</FastAnchor>
-<FastAnchor style="@Configuration.Appearance.Hypertext">Hypertext</FastAnchor>
+<FastAnchor Appearance="@Configuration.Appearance.Neutral">Neutral</FastAnchor>
+<FastAnchor Appearance="@Configuration.Appearance.Accent">Accent</FastAnchor>
+<FastAnchor Appearance="@Configuration.Appearance.Lightweight">Lightweight</FastAnchor>
+<FastAnchor Appearance="@Configuration.Appearance.Outline">Outline</FastAnchor>
+<FastAnchor Appearance="@Configuration.Appearance.Stealth">Stealth</FastAnchor>
+<FastAnchor Appearance="@Configuration.Appearance.Hypertext">Hypertext</FastAnchor>
+<hr/>
+
+<h1>Avatar</h1>
+<FastAvatar Href="#" Name="Avatar Name" Shape="circle" Fill="accent-primary" Color="black"
+            AltTag="Something">
+    Avatar
+</FastAvatar>
+
 
 <h1>Hello, world!</h1>
