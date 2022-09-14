@@ -1,4 +1,4 @@
-namespace com.encyclopediagalactica.ui.fast.FastAnchor;
+namespace EncyclopediaGalactica.UI.FAST.FastAnchor;
 
 using Microsoft.AspNetCore.Components;
 

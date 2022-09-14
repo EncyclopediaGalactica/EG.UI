@@ -1,4 +1,4 @@
-namespace com.encyclopediagalactica.ui.fast.FastAccordion;
+namespace EncyclopediaGalactica.UI.FAST.FastAccordion;
 
 using Microsoft.AspNetCore.Components;
 

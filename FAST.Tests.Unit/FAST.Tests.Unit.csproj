@@ -7,9 +7,9 @@
 
         <IsPackable>false</IsPackable>
 
-        <AssemblyName>com.encyclopediagalactica.ui.fast.test.unit</AssemblyName>
+        <AssemblyName>EncyclopediaGalactica.UI.FAST.Test.Unit</AssemblyName>
 
-        <RootNamespace>com.encyclopediagalactica.ui.fast.test.unit</RootNamespace>
+        <RootNamespace>EncyclopediaGalactica.UI.FAST.Test.Unit</RootNamespace>
 
         <LangVersion>default</LangVersion>
     </PropertyGroup>

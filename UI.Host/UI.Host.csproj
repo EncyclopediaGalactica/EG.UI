@@ -5,8 +5,8 @@
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
         <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
-        <AssemblyName>com.encyclopediagalactica.ui.host</AssemblyName>
-        <RootNamespace>com.encyclopediagalactica.ui.host</RootNamespace>
+        <AssemblyName>EncyclopediaGalactica.UI.FAST.Host</AssemblyName>
+        <RootNamespace>EncyclopediaGalactica.UI.FAST.Host</RootNamespace>
         <LangVersion>default</LangVersion>
     </PropertyGroup>
 

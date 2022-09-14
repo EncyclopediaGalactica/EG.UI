@@ -1,4 +1,4 @@
-﻿namespace com.encyclopediagalactica.ui.fast.test.host.Pages;
+﻿namespace EncyclopediaGalactica.UI.FAST.Test.Host.Pages;
 
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;

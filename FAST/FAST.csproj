@@ -4,8 +4,8 @@
         <TargetFramework>net6.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
-        <AssemblyName>com.encyclopediagalactica.ui.fast</AssemblyName>
-        <RootNamespace>com.encyclopediagalactica.ui.fast</RootNamespace>
+        <AssemblyName>EncyclopediaGalactica.UI.FAST</AssemblyName>
+        <RootNamespace>EncyclopediaGalactica.UI.FAST</RootNamespace>
         <LangVersion>default</LangVersion>
     </PropertyGroup>
 

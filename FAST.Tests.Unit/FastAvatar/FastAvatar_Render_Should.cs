@@ -1,8 +1,8 @@
-namespace com.encyclopediagalactica.ui.fast.test.unit.FastAvatar;
+namespace EncyclopediaGalactica.UI.FAST.Test.Unit.FastAvatar;
 
 using System.Diagnostics.CodeAnalysis;
 using Bunit;
-using fast.FastAvatar;
+using FAST.FastAvatar;
 using Xunit;
 using Xunit.Abstractions;
 
@@ -31,6 +31,7 @@ public class FastAvatar_Render_Should
                 .Add(altTag => altTag.AltTag, "alttag")
                 .Add(href => href.Href, "href")
                 .Add(shape => shape.Shape, "shape")
+                .Add(color => color.Color, "black")
                 .AddChildContent("childcontent"));
 
         // Assert
@@ -40,7 +41,8 @@ public class FastAvatar_Render_Should
             "link=\"href\" " +
             "name=\"Name\" " +
             "shape=\"shape\" " +
-            "fill=\"fill\">childcontent</fast-avatar>");
+            "fill=\"fill\" " +
+            "color=\"black\">childcontent</fast-avatar>");
     }
 
     [Fact]
@@ -53,6 +55,7 @@ public class FastAvatar_Render_Should
                 .Add(fill => fill.Fill, "fill")
                 .Add(href => href.Href, "href")
                 .Add(shape => shape.Shape, "shape")
+                .Add(color => color.Color, "black")
                 .AddChildContent("childcontent"));
 
         // Assert
@@ -62,7 +65,8 @@ public class FastAvatar_Render_Should
             "link=\"href\" " +
             "name=\"Name\" " +
             "shape=\"shape\" " +
-            "fill=\"fill\">childcontent</fast-avatar>");
+            "fill=\"fill\" " +
+            "color=\"black\">childcontent</fast-avatar>");
     }
 
     [Fact]
@@ -75,6 +79,7 @@ public class FastAvatar_Render_Should
                 .Add(fill => fill.Fill, "fill")
                 .Add(altTag => altTag.AltTag, "alttag")
                 .Add(shape => shape.Shape, "shape")
+                .Add(color => color.Color, "black")
                 .AddChildContent("childcontent"));
 
         // Assert
@@ -84,7 +89,8 @@ public class FastAvatar_Render_Should
             "link=\"\" " +
             "name=\"Name\" " +
             "shape=\"shape\" " +
-            "fill=\"fill\">childcontent</fast-avatar>");
+            "fill=\"fill\" " +
+            "color=\"black\">childcontent</fast-avatar>");
     }
 
     [Fact]
@@ -97,6 +103,7 @@ public class FastAvatar_Render_Should
                 .Add(altTag => altTag.AltTag, "alttag")
                 .Add(href => href.Href, "href")
                 .Add(shape => shape.Shape, "shape")
+                .Add(color => color.Color, "black")
                 .AddChildContent("childcontent"));
 
         // Assert
@@ -106,7 +113,8 @@ public class FastAvatar_Render_Should
             "link=\"href\" " +
             "name=\"\" " +
             "shape=\"shape\" " +
-            "fill=\"fill\">childcontent</fast-avatar>");
+            "fill=\"fill\" " +
+            "color=\"black\">childcontent</fast-avatar>");
     }
 
     [Fact]
@@ -119,6 +127,7 @@ public class FastAvatar_Render_Should
                 .Add(fill => fill.Fill, "fill")
                 .Add(altTag => altTag.AltTag, "alttag")
                 .Add(href => href.Href, "href")
+                .Add(color => color.Color, "black")
                 .AddChildContent("childcontent"));
 
         // Assert
@@ -128,11 +137,36 @@ public class FastAvatar_Render_Should
             "link=\"href\" " +
             "name=\"Name\" " +
             "shape=\"\" " +
-            "fill=\"fill\">childcontent</fast-avatar>");
+            "fill=\"fill\" " +
+            "color=\"black\">childcontent</fast-avatar>");
     }
 
     [Fact]
     public void RenderProperly_WithoutFill_WhenFillIsNotSetUp()
+    {
+        // Arrange
+        IRenderedComponent<FastAvatar> cut = _testContext.RenderComponent<FastAvatar>(
+            parameters => parameters
+                .Add(name => name.Name, "Name")
+                .Add(altTag => altTag.AltTag, "alttag")
+                .Add(href => href.Href, "href")
+                .Add(shape => shape.Shape, "shape")
+                .Add(color => color.Color, "black")
+                .AddChildContent("childcontent"));
+
+        // Assert
+        cut.MarkupMatches(
+            "<fast-avatar " +
+            "alt=\"alttag\" " +
+            "link=\"href\" " +
+            "name=\"Name\" " +
+            "shape=\"shape\" " +
+            "fill=\"\" " +
+            "color=\"black\">childcontent</fast-avatar>");
+    }
+    
+    [Fact]
+    public void RenderProperly_WithoutColor_WhenColorIsNotSetUp()
     {
         // Arrange
         IRenderedComponent<FastAvatar> cut = _testContext.RenderComponent<FastAvatar>(
@@ -150,6 +184,7 @@ public class FastAvatar_Render_Should
             "link=\"href\" " +
             "name=\"Name\" " +
             "shape=\"shape\" " +
-            "fill=\"\">childcontent</fast-avatar>");
+            "fill=\"\" " +
+            "color=\"\">childcontent</fast-avatar>");
     }
 }

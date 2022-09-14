@@ -1,4 +1,4 @@
-using com.encyclopediagalactica.ui.fast.test.host.Data;
+using EncyclopediaGalactica.UI.FAST.Test.Host.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 

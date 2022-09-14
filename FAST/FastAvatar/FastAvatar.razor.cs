@@ -1,4 +1,4 @@
-namespace com.encyclopediagalactica.ui.fast.FastAvatar;
+namespace EncyclopediaGalactica.UI.FAST.FastAvatar;
 
 using Microsoft.AspNetCore.Components;
 
@@ -18,6 +18,9 @@ public partial class FastAvatar
     
     [Parameter]
     public string? Fill { get; set; }
+    
+    [Parameter]
+    public string? Color { get; set; }
     
     [Parameter]
     public RenderFragment? ChildContent { get; set; }

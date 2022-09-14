@@ -1,4 +1,4 @@
-namespace com.encyclopediagalactica.ui.fast.test.host.Data;
+namespace EncyclopediaGalactica.UI.FAST.Test.Host.Data;
 
 public class WeatherForecastService
 {

@@ -1,4 +1,4 @@
-namespace com.encyclopediagalactica.ui.fast;
+namespace EncyclopediaGalactica.UI.FAST;
 
 public struct Configuration
 {
