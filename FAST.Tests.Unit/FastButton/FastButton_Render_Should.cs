@@ -476,7 +476,7 @@ public class FastButton_Render_Should
     }
 
     [Fact]
-    public void RenderProperly_WhenType_IsNotSet()
+    public void RenderProperly_AndFallBackToButtonTypeDefaultValue_WhenType_IsNotSet()
     {
         // Arrange
         IRenderedComponent<FastButton> cut = _testContext.RenderComponent<FastButton>(
@@ -509,6 +509,7 @@ public class FastButton_Render_Should
                           "formnovalidate=\"\" " +
                           "formtarget=\"formTarget\" " +
                           "name=\"name\" " +
+                          "type=\"button\" " +
                           "value=\"value\">childContent</fast-button>");
     }
 

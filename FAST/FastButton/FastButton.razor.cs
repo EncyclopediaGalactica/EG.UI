@@ -17,6 +17,13 @@ using Microsoft.AspNetCore.Components;
 ///         </list>
 ///     </para>
 /// </remarks>
+/// <example>
+///     <list type="bullet">
+///         <item>
+///             <FastButton>[...]</FastButton>
+///         </item>
+///     </list>
+/// </example>
 public partial class FastButton
 {
     [Parameter]
@@ -53,7 +60,7 @@ public partial class FastButton
     public string? Name { get; set; }
 
     [Parameter]
-    public string? ButtonType { get; set; }
+    public string ButtonType { get; set; } = Configuration.Button.Type.Button;
 
     [Parameter]
     public string? Value { get; set; }
