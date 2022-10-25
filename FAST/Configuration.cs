@@ -2,6 +2,22 @@ namespace EncyclopediaGalactica.UI.FAST;
 
 public struct Configuration
 {
+    public struct Combobox
+    {
+        public struct Autocomplete
+        {
+            public const string Inline = "inline";
+            public const string List = "list";
+            public const string Both = "both";
+            public const string None = "none";
+        }
+        
+        public struct Position
+        {
+            public const string Above = "above";
+            public const string Below = "below";
+        }
+    }
     public struct Button
     {
         public struct Type
